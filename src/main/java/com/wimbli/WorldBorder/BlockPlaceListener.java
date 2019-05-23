@@ -2,6 +2,7 @@ package com.wimbli.WorldBorder;
 
 import org.bukkit.Location;
 import org.bukkit.World;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.HandlerList;
@@ -21,6 +22,13 @@ public class BlockPlaceListener implements Listener
 		if (world == null) return;
 		BorderData border = Config.Border(world.getName());
 		if (border == null) return;
+		
+		Player p = event.getPlayer();
+		if (p != null) {
+			if (p.hasPermission("worldborder.bypassplacement")) {
+				return;
+			}
+		}
 		
 		if (!border.insideBorder(loc.getX(), loc.getZ(), Config.ShapeRound())) 
 		{
