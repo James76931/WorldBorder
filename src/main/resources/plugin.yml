@@ -126,8 +126,8 @@ permissions:
     description: Can prevent placement of blocks outside the border
     default: op
   worldborder.bypassplacement:
-  	description: Can place blocks beyond the worldborder
-  	default: op
+    description: Can place blocks beyond the worldborder
+    default: op
   worldborder.preventmobspawn:
     description: Can prevent spawning of mobs outside the border
     default: op
