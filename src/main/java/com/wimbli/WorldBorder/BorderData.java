@@ -293,7 +293,14 @@ public class BorderData
 
 	//these material IDs are acceptable for places to teleport player; breathable blocks and water
 	public static final LinkedHashSet<Material> safeOpenBlocks = new LinkedHashSet<Material>(Arrays.asList(
-		 new Material[] {Material.AIR, Material.OAK_SAPLING, Material.WATER, Material.POWERED_RAIL, Material.DETECTOR_RAIL, Material.COBWEB, Material.TALL_GRASS, Material.DEAD_BUSH, Material.DANDELION, Material.POPPY, Material.BROWN_MUSHROOM, Material.RED_MUSHROOM, Material.TORCH, Material.REDSTONE_WIRE, Material.WHEAT, Material.OAK_SIGN, Material.OAK_DOOR, Material.LADDER, Material.RAIL, Material.OAK_WALL_SIGN, Material.LEVER, Material.STONE_PRESSURE_PLATE, Material.IRON_DOOR, Material.OAK_PRESSURE_PLATE, Material.REDSTONE_TORCH, Material.STONE_BUTTON, Material.SNOW, Material.SUGAR_CANE, Material.NETHER_PORTAL, Material.REPEATER, Material.OAK_TRAPDOOR, Material.PUMPKIN_STEM, Material.MELON_STEM, Material.VINE, Material.NETHER_WART, Material.TRIPWIRE_HOOK, Material.TRIPWIRE, Material.CARROTS, Material.POTATOES, Material.COMPARATOR, Material.ACTIVATOR_RAIL, Material.WHITE_CARPET}
+		 new Material[] {
+				Material.AIR,            Material.OAK_SAPLING,   Material.WATER,      Material.POWERED_RAIL, Material.DETECTOR_RAIL,  Material.COBWEB,
+				Material.TALL_GRASS,     Material.DEAD_BUSH,     Material.DANDELION,  Material.POPPY,        Material.BROWN_MUSHROOM, Material.RED_MUSHROOM,
+				Material.TORCH,          Material.REDSTONE_WIRE, Material.WHEAT,      Material.OAK_SIGN,     Material.OAK_DOOR,       Material.LADDER,
+				Material.OAK_WALL_SIGN,  Material.LEVER,         Material.IRON_DOOR,  Material.RAIL,         Material.WHITE_CARPET,   Material.STONE_PRESSURE_PLATE,
+				Material.REDSTONE_TORCH, Material.STONE_BUTTON,  Material.SNOW,       Material.SUGAR_CANE,   Material.NETHER_PORTAL,  Material.REPEATER,
+				Material.OAK_TRAPDOOR,   Material.PUMPKIN_STEM,  Material.MELON_STEM, Material.VINE,         Material.NETHER_WART,    Material.TRIPWIRE_HOOK,
+				Material.TRIPWIRE,       Material.CARROTS,       Material.POTATOES,   Material.COMPARATOR,   Material.ACTIVATOR_RAIL, Material.OAK_PRESSURE_PLATE}
 	));
 
 	//these material IDs are ones we don't want to drop the player onto, like cactus or lava or fire or activated Ender portal
