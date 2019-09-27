@@ -294,18 +294,32 @@ public class BorderData
 	//these material IDs are acceptable for places to teleport player; breathable blocks and water
 	public static final LinkedHashSet<Material> safeOpenBlocks = new LinkedHashSet<Material>(Arrays.asList(
 		 new Material[] {
-				Material.AIR,            Material.OAK_SAPLING,   Material.WATER,      Material.POWERED_RAIL, Material.DETECTOR_RAIL,  Material.COBWEB,
-				Material.TALL_GRASS,     Material.DEAD_BUSH,     Material.DANDELION,  Material.POPPY,        Material.BROWN_MUSHROOM, Material.RED_MUSHROOM,
-				Material.TORCH,          Material.REDSTONE_WIRE, Material.WHEAT,      Material.OAK_SIGN,     Material.OAK_DOOR,       Material.LADDER,
-				Material.OAK_WALL_SIGN,  Material.LEVER,         Material.IRON_DOOR,  Material.RAIL,         Material.WHITE_CARPET,   Material.STONE_PRESSURE_PLATE,
-				Material.REDSTONE_TORCH, Material.STONE_BUTTON,  Material.SNOW,       Material.SUGAR_CANE,   Material.NETHER_PORTAL,  Material.REPEATER,
-				Material.OAK_TRAPDOOR,   Material.PUMPKIN_STEM,  Material.MELON_STEM, Material.VINE,         Material.NETHER_WART,    Material.TRIPWIRE_HOOK,
-				Material.TRIPWIRE,       Material.CARROTS,       Material.POTATOES,   Material.COMPARATOR,   Material.ACTIVATOR_RAIL, Material.OAK_PRESSURE_PLATE}
+		 		Material.AIR,               Material.WATER,              Material.POWERED_RAIL,        Material.DETECTOR_RAIL,        Material.COBWEB,                Material.TALL_GRASS,              Material.DEAD_BUSH,
+				Material.TORCH,             Material.WHEAT,              Material.LADDER,              Material.REDSTONE_WIRE,        Material.LEVER,                 Material.BROWN_MUSHROOM,          Material.RED_MUSHROOM,
+				Material.REDSTONE_TORCH,    Material.STONE_BUTTON,       Material.SNOW,                Material.SUGAR_CANE,           Material.NETHER_PORTAL,         Material.REPEATER,                Material.HEAVY_WEIGHTED_PRESSURE_PLATE,
+				Material.PUMPKIN_STEM,      Material.MELON_STEM,         Material.VINE,                Material.NETHER_WART,          Material.TRIPWIRE_HOOK,         Material.IRON_DOOR,               Material.LIGHT_WEIGHTED_PRESSURE_PLATE,
+				Material.TRIPWIRE,          Material.CARROTS,            Material.POTATOES,            Material.COMPARATOR,           Material.ACTIVATOR_RAIL,        Material.RAIL,                    Material.STONE_PRESSURE_PLATE,
+				Material.WHITE_CARPET,      Material.ORANGE_CARPET,      Material.MAGENTA_CARPET,      Material.LIGHT_BLUE_CARPET,    Material.YELLOW_CARPET,         Material.LIME_CARPET,             Material.PINK_CARPET,
+				Material.GRAY_CARPET,       Material.LIGHT_GRAY_CARPET,  Material.CYAN_CARPET,         Material.PURPLE_CARPET,        Material.BLUE_CARPET,           Material.BROWN_CARPET,            Material.GREEN_CARPET,
+				Material.RED_CARPET,        Material.BLACK_CARPET,       Material.POPPY,               Material.DANDELION,            Material.BLUE_ORCHID,           Material.ALLIUM,                  Material.AZURE_BLUET,
+				Material.RED_TULIP,         Material.ORANGE_TULIP,       Material.WHITE_TULIP,         Material.PINK_TULIP,           Material.OXEYE_DAISY,           Material.CORNFLOWER,              Material.LILY_OF_THE_VALLEY,
+				Material.OAK_SIGN,          Material.OAK_WALL_SIGN,      Material.OAK_DOOR,            Material.OAK_BUTTON,           Material.OAK_SAPLING,           Material.OAK_PRESSURE_PLATE,      Material.OAK_TRAPDOOR,
+				Material.BIRCH_SIGN,        Material.BIRCH_WALL_SIGN,    Material.BIRCH_DOOR,          Material.BIRCH_BUTTON,         Material.BIRCH_SAPLING,         Material.BIRCH_PRESSURE_PLATE,    Material.BIRCH_TRAPDOOR,
+				Material.SPRUCE_SIGN,       Material.SPRUCE_WALL_SIGN,   Material.SPRUCE_DOOR,         Material.SPRUCE_BUTTON,        Material.SPRUCE_SAPLING,        Material.SPRUCE_PRESSURE_PLATE,   Material.SPRUCE_TRAPDOOR,
+				Material.ACACIA_SIGN,       Material.ACACIA_WALL_SIGN,   Material.ACACIA_DOOR,         Material.ACACIA_BUTTON,        Material.ACACIA_SAPLING,        Material.ACACIA_PRESSURE_PLATE,   Material.ACACIA_TRAPDOOR,
+				Material.DARK_OAK_SIGN,     Material.DARK_OAK_WALL_SIGN, Material.DARK_OAK_DOOR,       Material.DARK_OAK_BUTTON,      Material.DARK_OAK_SAPLING,      Material.DARK_OAK_PRESSURE_PLATE, Material.DARK_OAK_TRAPDOOR,
+				Material.JUNGLE_SIGN,       Material.JUNGLE_WALL_SIGN,   Material.JUNGLE_DOOR,         Material.JUNGLE_BUTTON,        Material.JUNGLE_SAPLING,        Material.JUNGLE_PRESSURE_PLATE,   Material.JUNGLE_TRAPDOOR,
+				Material.SUNFLOWER,         Material.LILAC,              Material.ROSE_BUSH,           Material.PEONY,                Material.LARGE_FERN,            Material.TALL_GRASS,              Material.LARGE_FERN,
+				Material.TUBE_CORAL,        Material.BRAIN_CORAL,        Material.BUBBLE_CORAL,        Material.FIRE_CORAL,           Material.FIRE_CORAL,            Material.HORN_CORAL,              Material.DEAD_TUBE_CORAL,
+				Material.DEAD_BUBBLE_CORAL, Material.DEAD_BRAIN_CORAL,   Material.DEAD_FIRE_CORAL,     Material.DEAD_HORN_CORAL,      Material.TUBE_CORAL_FAN,        Material.BUBBLE_CORAL_FAN,        Material.BRAIN_CORAL_FAN,
+				Material.FIRE_CORAL_FAN,    Material.HORN_CORAL_FAN,     Material.DEAD_TUBE_CORAL_FAN, Material.DEAD_BRAIN_CORAL_FAN, Material.DEAD_BUBBLE_CORAL_FAN, Material.DEAD_FIRE_CORAL_FAN,     Material. DEAD_HORN_CORAL_FAN,
+				Material.FERN,              Material.BAMBOO_SAPLING,     Material.BAMBOO,              Material.KELP_PLANT,           Material.SEAGRASS,
+		 }
 	));
 
 	//these material IDs are ones we don't want to drop the player onto, like cactus or lava or fire or activated Ender portal
 	public static final LinkedHashSet<Material> painfulBlocks = new LinkedHashSet<Material>(Arrays.<Material>asList(
-		 new Material[] {Material.LAVA, Material.FIRE, Material.CACTUS, Material.END_PORTAL}
+		 new Material[] {Material.LAVA, Material.FIRE, Material.CACTUS, Material.END_PORTAL, Material.MAGMA_BLOCK, Material.WITHER_ROSE, Material.CAMPFIRE, Material.SWEET_BERRY_BUSH}
 	));
 
 	// check if a particular spot consists of 2 breathable blocks over something relatively solid
@@ -318,7 +332,7 @@ public class BorderData
 
 		Material below = world.getBlockAt(X, Y - 1, Z).getType();
 		return (safe
-			 && (!safeOpenBlocks.contains(below) || below == Material.LAVA)	// below target block not open/breathable (so presumably solid), or is water
+			 && (!safeOpenBlocks.contains(below) || Material.WATER.equals(below))	// below target block not open/breathable (so presumably solid), or is water
 			 && !painfulBlocks.contains(below)									// below target block not painful
 			);
 	}
