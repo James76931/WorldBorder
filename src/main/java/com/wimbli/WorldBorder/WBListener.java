@@ -23,7 +23,6 @@ public class WBListener implements Listener
 			Config.log("General Teleport cause: " + event.getCause().toString());
 
 		if (PlayerTeleportEvent.TeleportCause.NETHER_PORTAL == event.getCause()) {
-			Config.log("Skipping teleport management event - covered by onPlayerPortal");
 			return;
 		}
 
